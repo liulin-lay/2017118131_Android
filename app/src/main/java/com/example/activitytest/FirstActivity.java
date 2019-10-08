@@ -43,7 +43,7 @@ public class FirstActivity extends AppCompatActivity {
 @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent(FirstActivity.this, FirstActivity.class);
+                Intent intent=new Intent(FirstActivity.this, helloworld2.class);
                 startActivity(intent);
               // Toast.makeText(FirstActivity.this, "You clicked button 1",
                 //        Toast.LENGTH_SHORT).show();
