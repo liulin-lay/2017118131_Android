@@ -19,6 +19,7 @@ public class helloworld2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("helloworld2","Task id is"+getTaskId());
         setContentView(R.layout.second_layout);
         Button button2=(Button) findViewById(R.id.button_2);
         button2.setOnClickListener(new View.OnClickListener()
@@ -26,7 +27,7 @@ public class helloworld2 extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent intent=new Intent(helloworld2.this, FirstActivity.class);
+                Intent intent=new Intent(helloworld2.this, helloworld3.class);
                 startActivity(intent);
             }
         } );
