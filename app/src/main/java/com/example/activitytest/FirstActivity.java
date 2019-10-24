@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -52,8 +53,11 @@ public class FirstActivity extends AppCompatActivity {
             public void onClick(View v)
             {
                  //Intent intent=new Intent(FirstActivity.this, helloworld2.class);
-                Intent intent=new Intent("com.example.activitytest.ACTION_START");
-                intent.addCategory("com.example.activitytest.MY_CATEGORY");
+                //Intent intent=new Intent("com.example.activitytest.ACTION_START");
+                //intent.addCategory("com.example.activitytest.MY_CATEGORY");
+                Intent intent=new Intent(Intent.ACTION_VIEW);
+                //intent.setData(Uri.parse("http://www.baidu.com"));
+                intent.setData(Uri.parse("tel:10086"));
                 startActivity(intent);
               // Toast.makeText(FirstActivity.this, "You clicked button 1",
                 //        Toast.LENGTH_SHORT).show();

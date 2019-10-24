@@ -9,16 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".helloworld3"></activity>
+
+
+
+        <activity android:name=".helloworld3" />
         <activity
             android:name=".helloworld2"
             android:launchMode="singleInstance">
             <intent-filter>
-                <action android:name="com.example.activitytest.ACTION_START"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            <category android:name="com.example.activitytest.,MY_CATEGORY"/>
+                <action android:name="com.example.activitytest.ACTION_START" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.example.activitytest.,MY_CATEGORY" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ThirdActivity">
+
+        </activity>
+
         <activity
             android:name=".FirstActivity"
             android:label="this is FirstActivity"
@@ -29,6 +39,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
